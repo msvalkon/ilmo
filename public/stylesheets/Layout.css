@@ -1,0 +1,66 @@
+/*
+	koko sivun leveys: 1120px
+	contentin: 1100px
+*/
+
+html, body, #wrapper { 
+	height: 100%; 
+	margin: 0;
+	background-color: #7FB535;
+}
+
+body > #wrapper { 
+	height: auto; 
+	min-height: 100%;
+	width: 960px;
+	margin: 0 auto;
+}
+
+#content { 
+	width: 940px;
+	padding: 10px 5px 150px 5px;
+}  /* must be same height as the footer */
+
+#nav {
+	height: 50px;
+	padding: 10px;
+}
+#header {
+	height: 50px;
+}
+
+#footer {
+	position: relative;
+	margin-top: -200px; /* negative value of footer height */
+	height: 200px;
+	clear: both;
+	text-align: center;
+	background-color: #01282E;
+
+}
+#add_course {
+	
+}
+.login {
+	padding: 10px;
+	background-color: #83C97A;
+	border: 1px solid #01282E;
+	float: right;
+}
+
+/* CLEAR FIX*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+

@@ -1,0 +1,82 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	color: #01282E;
+}
+
+h1 {
+
+}
+
+h2 {
+	
+}
+
+h3 {
+	
+}
+
+p {
+	padding: 10px;
+}
+
+ul {
+	list-style-type: none;
+}
+ 
+li {
+	
+}
+hr {
+	height: 1px;
+	border: 0;
+	color: #01282E;
+	background-color: #7FB535;
+	width: 70%;
+}
+
+/* Div-kohtaiset tyylim‰‰rittelyt */
+
+#wrapper a {
+	color: #0F6C7A;
+}
+#wrapper a:visited {
+	color: #0F6C7A;
+}
+#wrapper a:hover {
+	text-decoration: none;
+}
+#wrapper fieldset {
+}
+
+#wrapper legend {
+	background-color: #FF7C2B;
+	color: #01282E;
+	border: 1px solid #01282E;
+}
+#wrapper label {
+	float: left;
+	padding: 0px 120px 0px 0px;
+}
+
+#nav ul {
+	list-style-type:none;
+}
+#nav li {
+	display: inline;
+}
+#nav a {
+	text-decoration: none;
+	font-size: 110%;
+	padding: 15px;
+}
+#nav a:hover {
+	text-decoration: underline;
+}
+#nav a:visited {
+	color: #0F6C7A;
+}
+#footer p {
+	padding: 0px;
+	color: #FF7C2B;
+}

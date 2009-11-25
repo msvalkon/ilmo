@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<%= stylesheet_link_tag "Layout" %>
+		<%= stylesheet_link_tag "Styles"%>
+	</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1>Ilmo 2.0</h1>
+		</div>
+		<div id="content" class="clearfix">	
+			<%= "Message: #{flash[:notice]}" if flash[:notice] %>
+
+			  <% if @user %>
+			    <%= "User: #{@user.name}" %> -
+			    <%= "IP Address: #{@application_session.ip_address}" %> - 
+			    <%= "Path: #{@application_session.path}" %> 
+			  <% end %>
+			
+			Welcome to the new course management system! This is web 3.12.
+					
+			<%= yield %>
+		</div>
+	</div>		
+	<div id="footer">
+		<div id="nav">
+			<ul>
+				<%= link_to "Home", root_url %> -
+				  <% if @user %>
+				    <li><%= link_to "Edit Account", edit_person_path('account') %> </li>
+				    <li><%= link_to "Logout", @application_session, :method => :delete %></li>
+					<li><%= link_to "Courses", courses_path%> </li> 
+				  <% else %>
+				    <li><%= link_to "Login", new_session_path %></li>
+				    <li><%= link_to "Register", new_person_path %></li>
+				  <% end %>
+			</ul>
+		</div>
+		<hr />
+		<p><%= luontiaika %></p>
+	</div>
+</body>
+
+</html>
