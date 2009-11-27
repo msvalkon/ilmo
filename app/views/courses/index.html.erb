@@ -4,9 +4,19 @@
 	<li><%= link_to 'Add Course', new_course_path %></li>
 </ul>
 <% @courses.each do |course| %>
-	<ul>
-	<li><%= link_to course.name, :controller => "courses", :action => "show", :id => course.id %></li>
-	</ul>
+<table>
+	<thead>
+		<th>Course Name</th>
+		<th>Description</th>
+		<th>Lecturer</th>
+		<th>Credits</th>
+	</thead>
+	<tr>
+			<td><%= link_to course.name, :controller => "courses", :action => "show", :id => course.id %></td>
+			<td><%= course.description %></td>
+			<td>kuka vetää</td>
+			<td>nopat</td>
+	</tr>
+</table>
 <% end %>
 
-<%= link_to 'Back', courses_path%>

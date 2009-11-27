@@ -45,6 +45,8 @@ ActionController::Routing::Routes.draw do |map|
   #  map.root :controller=>:courses
   map.root :controller => :people
   map.resources :courses
+  map.resources :course_instances
+  map.resources :course_exgroups
   map.resources :sessions
   map.resources :people
 end

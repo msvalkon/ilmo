@@ -17,11 +17,12 @@ h3 {
 }
 
 p {
-	padding: 10px;
+	padding: 0px;
 }
 
 ul {
 	list-style-type: none;
+	padding: 0;
 }
  
 li {
@@ -35,7 +36,20 @@ hr {
 	width: 70%;
 }
 
-/* Div-kohtaiset tyylim‰‰rittelyt */
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+tr {
+	text-align: left;
+	background-color: #fff;
+}
+td {
+	border: 1px solid #01282E;
+	padding: 20px;
+}
+
+/* Div-kohtaiset tyylim√§√§rittelyt */
 
 #wrapper a {
 	color: #0F6C7A;

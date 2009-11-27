@@ -1,8 +1,13 @@
 <h2><%= @course.name %></h2>
 
+<ul>
+	<% @course.course_instances.each do |ci| %>
+		<li><%= link_to ci.name, course_instance_url(ci) %></li>
+	<% end %>
+</ul>
 <p>
-<%= @course.description %></h2>
+<%= @course.description %>
 </p>
+
 <%= link_to "Back!", courses_path %>
 <br /> 
-
